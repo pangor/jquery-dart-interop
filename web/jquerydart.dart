@@ -1,11 +1,12 @@
 import 'dart:html';
-import 'package:js/js.dart';
+import 'package:js/js.dart' as js;
+
+hideIsDone() {
+  window.alert('all done!');
+}
 
 void main() {
-  scoped(() {
-    var $ = context;
-    $.$('#test').hide('slow', new Callback.once(() {
-      window.alert("The paragraph is now hidden");
-    }));
+  js.scoped(() {
+    js.context.$('p').hide(1000, new js.Callback.once(() => hideIsDone()));
   });
 }
