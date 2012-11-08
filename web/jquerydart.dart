@@ -7,6 +7,6 @@ hideIsDone() {
 
 void main() {
   js.scoped(() {
-    js.context.$('p').hide(1000, new js.Callback.once(() => hideIsDone()));
+    js.context.jQuery('p').hide(1000, new js.Callback.once(() => hideIsDone()));
   });
 }

@@ -858,9 +858,6 @@ $$.Object = {"": [],
  stringifyValue$1: function($0) {
   return this.noSuchMethod$1($.createInvocationMirror("stringifyValue", "stringifyValue$1", 0, [$0], []));
  },
- $$1: function($0) {
-  return this.noSuchMethod$1($.createInvocationMirror("$", "$$1", 0, [$0], []));
- },
  toJson$0: function() {
   return this.noSuchMethod$1($.createInvocationMirror("toJson", "toJson$0", 0, [], []));
  },
@@ -1010,6 +1007,9 @@ $$.Object = {"": [],
  },
  unregister$1: function($0) {
   return this.noSuchMethod$1($.createInvocationMirror("unregister", "unregister$1", 0, [$0], []));
+ },
+ jQuery$1: function($0) {
+  return this.noSuchMethod$1($.createInvocationMirror("jQuery", "jQuery$1", 0, [$0], []));
  },
  callSync$1: function($0) {
   return this.noSuchMethod$1($.createInvocationMirror("callSync", "callSync$1", 0, [$0], []));
@@ -4373,7 +4373,7 @@ $$._ProxiedObjectTable = {"": ["_name", "_nextId", "_deletedCount", "_registry?"
 $$.main_anon = {"": [],
  "super": "Closure",
  call$0: function() {
-  $.context().$$1('p').hide$2(1000, $.Callback$once(new $.main_anon0()));
+  $.context().jQuery$1('p').hide$2(1000, $.Callback$once(new $.main_anon0()));
 }
 };
 
